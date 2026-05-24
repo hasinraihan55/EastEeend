@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EastEend Contacts</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a>Contact</a>
+      <a href="home.html">
+      <div class="nav-logo">
+        <img id="logo" src="media/white_logo.png" alt="Easteeend" style="height:150px; display:block;" />
+      </div>
+      </a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <section id="contact">
+      <img class="contact-bg" src="media/contact_bg.gif" alt="" aria-hidden="true" />
+      <div class="contact-inner">
+        <div class="field-group">
+          <label class="field-label" for="name">Name</label>
+          <input
+            class="field-input"
+            id="name"
+            type="text"
+            placeholder="Your name"
+            autocomplete="name"
+          />
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="email">Email</label>
+          <input
+            class="field-input"
+            id="email"
+            type="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+          />
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="message">Message</label>
+          <textarea
+            class="field-textarea"
+            id="message"
+            placeholder="Tell us about your project…"
+          ></textarea>
+        </div>
+        <button class="submit-btn" type="button" onclick="handleSubmit()">
+          Send 
+        </button>
+      </div>
+    </section>
+
+    <!-- External Script File -->
+    <script src="script.js"></script>
+  </body>
+</html>
